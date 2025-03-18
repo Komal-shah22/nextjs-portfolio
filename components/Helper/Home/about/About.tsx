@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import { FiDownload } from "react-icons/fi";
 import React, { useEffect, useRef, useState } from "react";
 
 const About = () => {
@@ -60,15 +61,21 @@ const About = () => {
           I am a dedicated developer with a passion for creating innovative solutions. I specialize in web development and have experience in various technologies.
         </p>
         <a
-          href="#hire"
-          className={`inline-block bg-[#58b9e6] text-white px-6 py-3 rounded-md font-bold shadow-lg hover:bg-white hover:text-[#58b9e6] transition duration-300 ease-in-out ${
-            isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-          Hire Me
-        </a>
+  href="#hire"
+  className={`inline-flex items-center gap-2 bg-[#58b9e6] text-white px-6 py-3 rounded-md font-bold shadow-lg hover:bg-white hover:text-[#58b9e6] transition duration-300 ease-in-out ${
+    isVisible ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+  }`}
+>
+  My Resume <FiDownload className="text-xl font extrabold"/>
+</a>
+
       </div>
     </section>
   );
 };
 
 export default About;
+
+
+
 

@@ -8,9 +8,8 @@
     }
 }
 .text{
-    background-image: url(../public/logo.jpg);
+    background-image: url();
     background-size: contain;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: rgb(126, 210, 231);
 }
 .text-bg{
@@ -49,3 +48,22 @@
     -webkit-text-fill-color: transparent;
 
 }
+.certificate-bg{
+    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
+    background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.navbar-bg{
+    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
+    background-clip: text;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+  
+

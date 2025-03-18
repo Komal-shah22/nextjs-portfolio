@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import Image from "next/image"
 
 const skills = [
   { name: 'TypeScript', icon: '/images/typescript.png', percentage: 90 },
@@ -9,14 +10,20 @@ const skills = [
   { name: 'React.js', icon: '/images/react.png', percentage: 75 },
   { name: 'HTML', icon: '/images/html.png', percentage: 95 },
   { name: 'CSS', icon: '/images/css.png', percentage: 90 },
+  { name: 'Git', icon: '/images/git.png', percentage: 70 },
+  { name: 'GitHub', icon: '/images/github-skill.png', percentage: 82 },
+
+
 ];
 
 const SkillCard = ({ skill }: { skill: { name: string; icon: string; percentage: number } }) => (
   <div className="flex flex-col items-center">
-    <img
+    <Image
       src={skill.icon}
       alt={`Icon of ${skill.name}`}
       className="w-14 h-12 mb-2"
+      width={56} // Required for Next.js
+      height={48} // Required for Next.js
       loading="lazy" 
     />
     <span className="mb-2">{skill.name}</span>
