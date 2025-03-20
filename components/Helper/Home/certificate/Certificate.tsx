@@ -11,13 +11,13 @@ const certifications = [
 
 export default function Certifications() {
   const [startIndex, setStartIndex] = useState(0);
-  const [visibleCards, setVisibleCards] = useState(1); // Default 1 for mobile
+  const [visibleCards, setVisibleCards] = useState(1);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1024) setVisibleCards(3); // Desktop
-      else if (window.innerWidth >= 768) setVisibleCards(2); // Tablet
-      else setVisibleCards(1); // Mobile
+      if (window.innerWidth >= 1024) setVisibleCards(3);
+      else if (window.innerWidth >= 768) setVisibleCards(2);
+      else setVisibleCards(1); 
     };
 
     handleResize(); 
@@ -42,7 +42,6 @@ export default function Certifications() {
           My Experienced Certification
         </h2>
 
-        {/* Responsive Slider */}
         <div className="relative mt-8 overflow-hidden">
           <div
             className="flex transition-transform duration-700 ease-in-out"

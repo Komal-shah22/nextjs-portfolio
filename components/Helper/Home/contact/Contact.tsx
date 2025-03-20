@@ -18,7 +18,7 @@ const Contact = () => {
 
     if (response.ok) {
       setSubmitted(true);
-      form.reset(); // Form fields reset
+      form.reset(); 
     }
   };
 
@@ -26,9 +26,8 @@ const Contact = () => {
     <div id='contact' className="min-h-screen bg-black flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
         
-        {/* Left Side - Social Links */}
         <div className="flex flex-col items-center lg:items-start">
-          <h2 className="contact-bg text-5xl font-bold text-[#28cdeb] mb-6 text-center">Let's Connect</h2>
+          <h2 className="contact-bg text-5xl font-bold text-[#28cdeb] mb-6 text-center">Let&apos;s Connect</h2>
 
           <div className="flex space-x-4 mb-6">
             <Link href="https://github.com/Komal-shah22" target="_blank" rel="noopener noreferrer">
@@ -48,8 +47,6 @@ const Contact = () => {
             Feel free to reach out to me at <br /> [komalfareed93@gmail.com].
           </p>
         </div>
-
-        {/* Right Side - Contact Form */}
         <div className="bg-black p-4 shadow-lg rounded-lg border-[2px] max-w-md w-full">
           <h2 className="text-2xl font-semibold text-[#15aaf0] mb-4">Contact Me</h2>
           

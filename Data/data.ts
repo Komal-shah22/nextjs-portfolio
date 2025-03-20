@@ -3,7 +3,7 @@ export const BaseInfo = {
     name: "Komal",
     position: "Full Stack Developer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro numquam ad, vero consequuntur aperiam cumque voluptatum pariatur veniam? Qui facilis est ipsam odio cum!",
+      "Innovative Full-Stack & AI Developer | Building scalable, efficient, and user-focused solutions with expertise in modern web technologies and artificial intelligence.",
     profilePic: "/images/hero-image.jpeg",
   };
   
