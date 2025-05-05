@@ -22,10 +22,17 @@ const projects: Project[] = [
     },
     {
       title: "CountDown Timer",
-      description: "A simple countdown timer built using JavaScript.",
+      description: "A simple countdown timer built using next.js.",
       image: "/countdown-timer.png",
       link: "https://serene-starlight-574e0b.netlify.app/",
       github: "https://github.com/Komal-shah22/count-down-timer",
+    },
+    {
+      title: "Weather App",
+      description: "A sleek and animated weather app built with Next.js, using API to display real-time temperature for any city.",
+      image: "/weather-app.png",
+      link: "https://project-2-weather-app.netlify.app/",
+      github: "https://github.com/Komal-shah22/Weather-app.git",
     },
     {
       title: "E-commerce Website",
