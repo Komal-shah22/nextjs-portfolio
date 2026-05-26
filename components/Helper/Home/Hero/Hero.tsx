@@ -39,7 +39,7 @@ const Hero = () => {
           </motion.p>
 
           <Link
-            href="https://drive.google.com/file/d/1VJ7TMbfpU1__14Yha-AzawJuFfgN41Oo/view?usp=sharing"
+            href="https://drive.google.com/file/d/14VIPUCOQ1z0uqouuSnvt4J1gmtmIwIBk/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
