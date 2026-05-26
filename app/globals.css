@@ -2,67 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        scroll-margin-top: 12vh;
+    }
+
+    *:focus-visible {
+        outline: 2px solid #58b9e6;
+        outline-offset: 2px;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+    }
+
+    .focus\:not-sr-only:focus {
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        overflow: visible;
+        clip: auto;
+        white-space: normal;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
+
 @layer components{
     .nav_link{
         @apply relative text-base font-medium w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#a5e2f5] text-[#d1e8f8] after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-right
     }
-}
-.text{
-    background-image: url();
-    background-size: contain;
-    -webkit-text-fill-color: rgb(126, 210, 231);
-}
-.text-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.about-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 
-}
-.skills-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.contact-bg {
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
-}
-.project-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.certificate-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-}
-.navbar-bg{
-    background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
-    background-clip: text;
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    .gradient-text{
+        background-image: linear-gradient(to right,rgb(64, 168, 194) 0%,#fff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
   
